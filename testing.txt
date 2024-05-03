@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 this is my testing file. need to update it
+=======
+this is my testing file. this is new file
+>>>>>>> copybranch1
