@@ -1,0 +1,112 @@
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ git add -A
+
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   gitfile.txt
+        new file:   new_gitfile.txt
+
+
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ git commit -m "two new files"
+[master a0a9b1d] two new files
+ 2 files changed, 2 insertions(+)
+ create mode 100644 gitfile.txt
+ create mode 100644 new_gitfile.txt
+
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new_gitfile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        project_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ git add -A
+
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   new_gitfile.txt
+        new file:   project_file.txt
+
+
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ git commit -m "add all files"
+[master 215019a] add all files
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 project_file.txt
+
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ get push origin master
+bash: get: command not found
+
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (8/8), 732 bytes | 366.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/jannat1987/github_imran1
+   8845ffe..215019a  master -> master
+
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ git pull origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 937 bytes | 37.00 KiB/s, done.
+From https://github.com/jannat1987/github_imran1
+ * branch            master     -> FETCH_HEAD
+   215019a..9767fee  master     -> origin/master
+Updating 215019a..9767fee
+Fast-forward
+ test1_file | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test1_file
+
+Jannat@SyedImran MINGW64 /c/github_imran1 (master)
+$ git log
+commit 9767fee6d22da1dcf435aeb58ef4e4df78701578 (HEAD -> master, origin/master)
+Author: jannat1987 <168503951+jannat1987@users.noreply.github.com>
+Date:   Mon May 6 09:28:50 2024 +0530
+
+    Create test1_file
+
+commit 215019a5e2094ac3890487d6f2cea9b64042b1d3
+Author: syed Imran <imran888_saiyed@yahoo.com>
+Date:   Mon May 6 09:13:31 2024 +0530
+
+    add all files
+
+commit a0a9b1df3f3bae528d0f88cb36cbed1f771007ae
+Author: syed Imran <imran888_saiyed@yahoo.com>
+Date:   Mon May 6 09:10:31 2024 +0530
+
+    two new files
